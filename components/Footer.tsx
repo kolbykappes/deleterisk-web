@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy-950 text-steel-300" role="contentinfo">
+    <footer className="bg-brand-900 text-slate-300" role="contentinfo">
       <div className="section-container py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
@@ -22,7 +22,7 @@ export default function Footer() {
               height={48}
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
-            <p className="text-sm text-steel-400">
+            <p className="text-sm text-slate-400">
               Business Continuity & Rapid Restoration for Critical Manufacturing
             </p>
           </div>
@@ -35,7 +35,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-steel-400 hover:text-white transition-colors"
+                    className="text-slate-400 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -47,7 +47,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-steel-400">
+            <ul className="space-y-2 text-slate-400">
               <li>
                 <a
                   href="mailto:info@deleterisk.com"
@@ -74,21 +74,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-navy-800 pt-8">
+        <div className="border-t border-brand-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-steel-500">
+            <p className="text-sm text-slate-500">
               &copy; {currentYear} Delete Risk. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
-                className="text-sm text-steel-500 hover:text-white transition-colors"
+                className="text-sm text-slate-500 hover:text-white transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-sm text-steel-500 hover:text-white transition-colors"
+                className="text-sm text-slate-500 hover:text-white transition-colors"
               >
                 Terms of Service
               </a>

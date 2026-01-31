@@ -8,10 +8,10 @@ export default function Services() {
       <div className="section-container">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 id="services-heading" className="heading-2 text-navy-900 mb-6">
+          <h2 id="services-heading" className="heading-2 text-brand-500 mb-6">
             Two Sides of Complete Protection
           </h2>
-          <p className="body-large text-steel-600">
+          <p className="body-large text-slate-600">
             Delete Risk delivers both rapid restoration execution and
             independent loss control advisory. Whether you need boots on the
             ground or command authority in the room, we bring the expertise that
@@ -22,9 +22,9 @@ export default function Services() {
         {/* Service Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Service Card 1: Large-Loss Restoration */}
-          <div className="bg-steel-50 rounded-2xl p-8 border border-steel-200 hover:border-navy-300 transition-colors">
+          <div className="bg-frost-100 rounded-2xl p-8 border border-slate-200 hover:border-shield-400 transition-colors">
             {/* Icon */}
-            <div className="w-14 h-14 bg-navy-900 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-14 h-14 bg-brand-500 rounded-xl flex items-center justify-center mb-6">
               <svg
                 className="w-7 h-7 text-white"
                 fill="none"
@@ -40,11 +40,11 @@ export default function Services() {
               </svg>
             </div>
 
-            <h3 className="heading-3 text-navy-900 mb-4">
+            <h3 className="heading-3 text-brand-500 mb-4">
               Rapid Response & Restoration
             </h3>
 
-            <p className="text-steel-600 mb-6 leading-relaxed">
+            <p className="text-slate-600 mb-6 leading-relaxed">
               When catastrophic events strike—fires, floods, equipment failures,
               environmental releases—we mobilize within hours to contain damage,
               coordinate specialized vendors, and restore operations. Our lean,
@@ -56,7 +56,7 @@ export default function Services() {
             <ul className="space-y-3 mb-8">
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -66,13 +66,13 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   7-day mobilization for large-loss projects ($1M-$5M+)
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -82,14 +82,14 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Specialized vendor coordination (electrical, refrigeration,
                   environmental, demolition)
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -99,13 +99,13 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Complete insurance documentation and claims support
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -115,7 +115,7 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   National coverage with proven execution across 20+ markets
                   simultaneously
                 </span>
@@ -124,7 +124,7 @@ export default function Services() {
 
             <a
               href="#contact"
-              className="inline-flex items-center text-navy-900 font-semibold hover:text-urgent-orange transition-colors"
+              className="inline-flex items-center text-brand-500 font-semibold hover:text-shield-500 transition-colors"
             >
               Discuss Your Facility Needs
               <svg
@@ -144,9 +144,9 @@ export default function Services() {
           </div>
 
           {/* Service Card 2: Independent Loss Control */}
-          <div className="bg-steel-50 rounded-2xl p-8 border border-steel-200 hover:border-navy-300 transition-colors">
+          <div className="bg-frost-100 rounded-2xl p-8 border border-slate-200 hover:border-shield-400 transition-colors">
             {/* Icon */}
-            <div className="w-14 h-14 bg-navy-900 rounded-xl flex items-center justify-center mb-6">
+            <div className="w-14 h-14 bg-brand-500 rounded-xl flex items-center justify-center mb-6">
               <svg
                 className="w-7 h-7 text-white"
                 fill="none"
@@ -162,11 +162,11 @@ export default function Services() {
               </svg>
             </div>
 
-            <h3 className="heading-3 text-navy-900 mb-4">
+            <h3 className="heading-3 text-brand-500 mb-4">
               Business Continuity & Loss Command
             </h3>
 
-            <p className="text-steel-600 mb-6 leading-relaxed">
+            <p className="text-slate-600 mb-6 leading-relaxed">
               Before disaster strikes, we build customized business continuity
               playbooks. During crisis, we provide independent loss command
               authority—controlling scope, managing contractors, and driving
@@ -178,7 +178,7 @@ export default function Services() {
             <ul className="space-y-3 mb-8">
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -188,14 +188,14 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Pre-loss continuity planning and facility vulnerability
                   assessments
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -205,13 +205,13 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Crisis response command with vendor and insurance coordination
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -221,14 +221,14 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Scope control and cost protection (prevent contractor
                   over-scoping)
                 </span>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 text-urgent-orange mt-0.5 mr-3 flex-shrink-0"
+                  className="w-5 h-5 text-shield-500 mt-0.5 mr-3 flex-shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -238,7 +238,7 @@ export default function Services() {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-steel-700">
+                <span className="text-slate-700">
                   Timeline acceleration—every day saved retains customers and
                   protects jobs
                 </span>
@@ -247,7 +247,7 @@ export default function Services() {
 
             <a
               href="#contact"
-              className="inline-flex items-center text-navy-900 font-semibold hover:text-urgent-orange transition-colors"
+              className="inline-flex items-center text-brand-500 font-semibold hover:text-shield-500 transition-colors"
             >
               Learn About Advisory Services
               <svg

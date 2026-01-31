@@ -58,7 +58,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-steel-700 hover:text-navy-900 font-medium transition-colors duration-200"
+                className="text-slate-600 hover:text-brand-500 font-medium transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -74,7 +74,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-steel-700 hover:text-navy-900 hover:bg-steel-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-navy-900"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-600 hover:text-brand-500 hover:bg-frost-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500"
             aria-controls="mobile-menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
@@ -123,12 +123,12 @@ export default function Navigation() {
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="px-2 pt-2 pb-4 space-y-1 border-t border-steel-200">
+          <div className="px-2 pt-2 pb-4 space-y-1 border-t border-slate-200">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block px-3 py-3 text-base font-medium text-steel-700 hover:text-navy-900 hover:bg-steel-50 rounded-md transition-colors duration-200"
+                className="block px-3 py-3 text-base font-medium text-slate-600 hover:text-brand-500 hover:bg-frost-100 rounded-md transition-colors duration-200"
                 onClick={handleLinkClick}
               >
                 {link.label}

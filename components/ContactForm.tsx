@@ -97,12 +97,12 @@ export default function ContactForm() {
     return (
       <section
         id="contact"
-        className="section-padding bg-navy-900"
+        className="section-padding bg-brand-500"
         aria-labelledby="contact-heading"
       >
         <div className="section-container">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-20 h-20 bg-shield-500 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg
                 className="w-10 h-10 text-white"
                 fill="none"
@@ -118,7 +118,7 @@ export default function ContactForm() {
               </svg>
             </div>
             <h2 className="heading-2 text-white mb-4">Thank You!</h2>
-            <p className="body-large text-steel-300 mb-8">
+            <p className="body-large text-frost-200 mb-8">
               We&apos;ve received your message and will be in touch within 24
               hours.
             </p>
@@ -137,7 +137,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="section-padding bg-navy-900"
+      className="section-padding bg-brand-500"
       aria-labelledby="contact-heading"
     >
       <div className="section-container">
@@ -147,7 +147,7 @@ export default function ContactForm() {
             <h2 id="contact-heading" className="heading-2 text-white mb-4">
               Protect Your Operations. Let&apos;s Talk.
             </h2>
-            <p className="body-large text-steel-300">
+            <p className="body-large text-frost-200">
               Whether you&apos;re preparing for potential risks or responding to
               an active crisis, Delete Risk brings the expertise and rapid
               response your facility needs. Get in touch to discuss how we can
@@ -166,9 +166,9 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="fullName"
-                  className="block text-sm font-medium text-steel-700 mb-2"
+                  className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Full Name <span className="text-urgent-red">*</span>
+                  Full Name <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -179,14 +179,14 @@ export default function ContactForm() {
                   placeholder="John Smith"
                   className={`w-full px-4 py-3 rounded-lg border ${
                     errors.fullName
-                      ? "border-urgent-red focus:ring-urgent-red"
-                      : "border-steel-300 focus:ring-navy-900"
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-slate-300 focus:ring-brand-500"
                   } focus:outline-none focus:ring-2 focus:border-transparent transition-colors`}
                   aria-invalid={!!errors.fullName}
                   aria-describedby={errors.fullName ? "fullName-error" : undefined}
                 />
                 {errors.fullName && (
-                  <p id="fullName-error" className="mt-1 text-sm text-urgent-red">
+                  <p id="fullName-error" className="mt-1 text-sm text-red-600">
                     {errors.fullName}
                   </p>
                 )}
@@ -196,9 +196,9 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-steel-700 mb-2"
+                  className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Email Address <span className="text-urgent-red">*</span>
+                  Email Address <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="email"
@@ -209,14 +209,14 @@ export default function ContactForm() {
                   placeholder="john.smith@company.com"
                   className={`w-full px-4 py-3 rounded-lg border ${
                     errors.email
-                      ? "border-urgent-red focus:ring-urgent-red"
-                      : "border-steel-300 focus:ring-navy-900"
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-slate-300 focus:ring-brand-500"
                   } focus:outline-none focus:ring-2 focus:border-transparent transition-colors`}
                   aria-invalid={!!errors.email}
                   aria-describedby={errors.email ? "email-error" : undefined}
                 />
                 {errors.email && (
-                  <p id="email-error" className="mt-1 text-sm text-urgent-red">
+                  <p id="email-error" className="mt-1 text-sm text-red-600">
                     {errors.email}
                   </p>
                 )}
@@ -226,9 +226,9 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="company"
-                  className="block text-sm font-medium text-steel-700 mb-2"
+                  className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Company Name <span className="text-urgent-red">*</span>
+                  Company Name <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="text"
@@ -239,14 +239,14 @@ export default function ContactForm() {
                   placeholder="Your Company"
                   className={`w-full px-4 py-3 rounded-lg border ${
                     errors.company
-                      ? "border-urgent-red focus:ring-urgent-red"
-                      : "border-steel-300 focus:ring-navy-900"
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-slate-300 focus:ring-brand-500"
                   } focus:outline-none focus:ring-2 focus:border-transparent transition-colors`}
                   aria-invalid={!!errors.company}
                   aria-describedby={errors.company ? "company-error" : undefined}
                 />
                 {errors.company && (
-                  <p id="company-error" className="mt-1 text-sm text-urgent-red">
+                  <p id="company-error" className="mt-1 text-sm text-red-600">
                     {errors.company}
                   </p>
                 )}
@@ -256,9 +256,9 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium text-steel-700 mb-2"
+                  className="block text-sm font-medium text-slate-700 mb-2"
                 >
-                  Phone Number <span className="text-urgent-red">*</span>
+                  Phone Number <span className="text-red-600">*</span>
                 </label>
                 <input
                   type="tel"
@@ -269,14 +269,14 @@ export default function ContactForm() {
                   placeholder="(555) 123-4567"
                   className={`w-full px-4 py-3 rounded-lg border ${
                     errors.phone
-                      ? "border-urgent-red focus:ring-urgent-red"
-                      : "border-steel-300 focus:ring-navy-900"
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-slate-300 focus:ring-brand-500"
                   } focus:outline-none focus:ring-2 focus:border-transparent transition-colors`}
                   aria-invalid={!!errors.phone}
                   aria-describedby={errors.phone ? "phone-error" : undefined}
                 />
                 {errors.phone && (
-                  <p id="phone-error" className="mt-1 text-sm text-urgent-red">
+                  <p id="phone-error" className="mt-1 text-sm text-red-600">
                     {errors.phone}
                   </p>
                 )}
@@ -286,7 +286,7 @@ export default function ContactForm() {
               <div className="md:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-steel-700 mb-2"
+                  className="block text-sm font-medium text-slate-700 mb-2"
                 >
                   Message
                 </label>
@@ -297,7 +297,7 @@ export default function ContactForm() {
                   onChange={handleChange}
                   placeholder="Tell us about your facility and what you're looking for..."
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border border-steel-300 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-colors resize-none"
                 />
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function ContactForm() {
             </div>
 
             {/* Privacy Note */}
-            <p className="mt-4 text-sm text-steel-500 text-center">
+            <p className="mt-4 text-sm text-slate-500 text-center">
               Your information is confidential. We&apos;ll use it only to
               respond to your inquiry.
             </p>
