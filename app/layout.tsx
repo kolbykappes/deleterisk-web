@@ -40,7 +40,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-white text-steel-900">
+      <body className="bg-white text-slate-800">
         {children}
       </body>
     </html>

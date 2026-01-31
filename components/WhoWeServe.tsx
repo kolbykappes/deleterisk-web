@@ -101,7 +101,7 @@ export default function WhoWeServe() {
   return (
     <section
       id="who-we-serve"
-      className="section-padding bg-steel-50"
+      className="section-padding bg-frost-100"
       aria-labelledby="who-we-serve-heading"
     >
       <div className="section-container">
@@ -109,11 +109,11 @@ export default function WhoWeServe() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2
             id="who-we-serve-heading"
-            className="heading-2 text-navy-900 mb-6"
+            className="heading-2 text-brand-500 mb-6"
           >
             Critical Manufacturing Operations Where Downtime Destroys Value
           </h2>
-          <p className="body-large text-steel-600">
+          <p className="body-large text-slate-600">
             We partner with large, complex manufacturing operations where every
             day of downtime costs millions—and where rapid recovery is the
             difference between survival and failure.
@@ -125,13 +125,13 @@ export default function WhoWeServe() {
           {industries.map((industry) => (
             <div
               key={industry.title}
-              className="bg-white rounded-xl p-6 shadow-lg border border-steel-200 hover:border-navy-300 transition-colors"
+              className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:border-shield-400 transition-colors"
             >
               {/* Icon */}
-              <div className="text-navy-900 mb-4">{industry.icon}</div>
+              <div className="text-brand-500 mb-4">{industry.icon}</div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold text-navy-900 mb-4">
+              <h3 className="text-lg font-semibold text-brand-500 mb-4">
                 {industry.title}
               </h3>
 
@@ -140,9 +140,9 @@ export default function WhoWeServe() {
                 {industry.items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start text-steel-600 text-sm"
+                    className="flex items-start text-slate-600 text-sm"
                   >
-                    <span className="w-1.5 h-1.5 bg-urgent-orange rounded-full mt-2 mr-2 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-shield-500 rounded-full mt-2 mr-2 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -153,13 +153,13 @@ export default function WhoWeServe() {
 
         {/* Callout Section */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-navy-900 rounded-xl p-8 text-center">
+          <div className="bg-brand-500 rounded-xl p-8 text-center">
             <p className="text-lg md:text-xl text-white leading-relaxed">
               If your facility experiences downtime costs of millions per day,
               customers who cannot wait for delivery, and employees whose
               livelihoods depend on rapid recovery—Delete Risk is built for you.
             </p>
-            <a href="#contact" className="btn-primary mt-6 inline-block">
+            <a href="#contact" className="btn-primary mt-6 inline-block !bg-shield-500 hover:!bg-shield-600">
               Protect Your Operations
             </a>
           </div>

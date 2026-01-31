@@ -43,16 +43,16 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="section-padding bg-steel-50"
+      className="section-padding bg-frost-100"
       aria-labelledby="team-heading"
     >
       <div className="section-container">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 id="team-heading" className="heading-2 text-navy-900 mb-6">
+          <h2 id="team-heading" className="heading-2 text-brand-500 mb-6">
             Leadership Built on Decades of Results
           </h2>
-          <p className="body-large text-steel-600">
+          <p className="body-large text-slate-600">
             Delete Risk is led by proven operators with deep expertise in
             large-loss restoration, manufacturing operations, and insurance
             stakeholder management.
@@ -64,18 +64,18 @@ export default function Team() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg border border-steel-200"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200"
             >
               {/* Photo Placeholder */}
-              <div className="h-64 bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center">
+              <div className="h-64 bg-gradient-to-br from-brand-600 to-brand-500 flex items-center justify-center">
                 {member.hasPhoto ? (
                   // Future: Add actual photo
-                  <div className="w-32 h-32 rounded-full bg-navy-700" />
+                  <div className="w-32 h-32 rounded-full bg-brand-400" />
                 ) : (
                   <div className="text-center">
-                    <div className="w-24 h-24 mx-auto rounded-full bg-navy-700 flex items-center justify-center mb-4">
+                    <div className="w-24 h-24 mx-auto rounded-full bg-brand-400 flex items-center justify-center mb-4">
                       <svg
-                        className="w-12 h-12 text-steel-400"
+                        className="w-12 h-12 text-frost-200"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -88,7 +88,7 @@ export default function Team() {
                         />
                       </svg>
                     </div>
-                    <span className="text-steel-400 text-sm">
+                    <span className="text-frost-200 text-sm">
                       Photo Coming Soon
                     </span>
                   </div>
@@ -98,28 +98,28 @@ export default function Team() {
               {/* Content */}
               <div className="p-8">
                 {/* Name & Title */}
-                <h3 className="text-2xl font-bold text-navy-900 mb-1">
+                <h3 className="text-2xl font-bold text-brand-500 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-urgent-orange font-medium mb-6">
+                <p className="text-shield-500 font-medium mb-6">
                   {member.title}
                 </p>
 
                 {/* Bio */}
-                <div className="text-steel-600 text-sm leading-relaxed mb-6 whitespace-pre-line">
+                <div className="text-slate-600 text-sm leading-relaxed mb-6 whitespace-pre-line">
                   {member.bio}
                 </div>
 
                 {/* Credentials */}
-                <div className="border-t border-steel-200 pt-6">
-                  <h4 className="text-sm font-semibold text-navy-900 mb-3 uppercase tracking-wide">
+                <div className="border-t border-slate-200 pt-6">
+                  <h4 className="text-sm font-semibold text-brand-500 mb-3 uppercase tracking-wide">
                     Key Credentials
                   </h4>
                   <ul className="space-y-2">
                     {member.credentials.map((credential, index) => (
                       <li key={index} className="flex items-start text-sm">
                         <svg
-                          className="w-4 h-4 text-urgent-orange mt-0.5 mr-2 flex-shrink-0"
+                          className="w-4 h-4 text-shield-500 mt-0.5 mr-2 flex-shrink-0"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -129,7 +129,7 @@ export default function Team() {
                             clipRule="evenodd"
                           />
                         </svg>
-                        <span className="text-steel-700">{credential}</span>
+                        <span className="text-slate-700">{credential}</span>
                       </li>
                     ))}
                   </ul>
@@ -138,7 +138,7 @@ export default function Team() {
                 {/* CTA */}
                 <a
                   href="#contact"
-                  className="inline-flex items-center mt-6 text-navy-900 font-semibold hover:text-urgent-orange transition-colors"
+                  className="inline-flex items-center mt-6 text-brand-500 font-semibold hover:text-shield-500 transition-colors"
                 >
                   Connect with {member.name.split(" ")[0]}
                   <svg

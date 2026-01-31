@@ -81,11 +81,11 @@ export default function WhyDeleteRisk() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2
             id="why-delete-risk-heading"
-            className="heading-2 text-navy-900 mb-6"
+            className="heading-2 text-brand-500 mb-6"
           >
             Proven Expertise. Proven Relationships. Proven Results.
           </h2>
-          <p className="body-large text-steel-600">
+          <p className="body-large text-slate-600">
             Delete Risk brings operational execution and independent advisory
             expertise that traditional contractors and consultants cannot match.
           </p>
@@ -96,20 +96,20 @@ export default function WhyDeleteRisk() {
           {differentiators.map((item) => (
             <div
               key={item.title}
-              className="bg-steel-50 rounded-xl p-8 border border-steel-200"
+              className="bg-frost-100 rounded-xl p-8 border border-slate-200"
             >
               {/* Icon */}
-              <div className="w-14 h-14 bg-navy-900 rounded-xl flex items-center justify-center mb-6 text-white">
+              <div className="w-14 h-14 bg-brand-500 rounded-xl flex items-center justify-center mb-6 text-white">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-semibold text-navy-900 mb-4">
+              <h3 className="text-xl font-semibold text-brand-500 mb-4">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="text-steel-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -117,7 +117,7 @@ export default function WhyDeleteRisk() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="bg-navy-900 rounded-2xl p-8 md:p-12">
+        <div className="bg-brand-500 rounded-2xl p-8 md:p-12">
           <h3 className="text-xl font-semibold text-white text-center mb-8">
             Track Record You Can Trust
           </h3>
@@ -125,11 +125,11 @@ export default function WhyDeleteRisk() {
             {trustIndicators.map((indicator, index) => (
               <div
                 key={index}
-                className="bg-navy-800 rounded-lg px-6 py-3 border border-navy-700"
+                className="bg-brand-600 rounded-lg px-6 py-3 border border-brand-400"
               >
                 <div className="flex items-center">
                   <svg
-                    className="w-5 h-5 text-urgent-orange mr-2 flex-shrink-0"
+                    className="w-5 h-5 text-frost-300 mr-2 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
