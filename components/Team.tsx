@@ -1,26 +1,40 @@
 const teamMembers = [
   {
-    name: "Kory Kappes",
-    title: "Founder & Principal",
-    bio: `Kory brings over 15 years of proven experience managing large-scale commercial and manufacturing losses. He has successfully delivered restoration projects ranging from $1M to $5M+ across diverse industries including food processing, industrial manufacturing, logistics, and entertainment venues.
+    name: "Kory R. Kappes",
+    title: "Founder | Disaster Risk & Large-Loss Advisor",
+    bio: `Kory R. Kappes is a nationally recognized large-loss and disaster-recovery leader with more than 15 years of experience advising and executing complex loss response across the United States. Over his career, he has led and supported hundreds of millions of dollars in commercial, industrial, and catastrophic loss events spanning manufacturing, agriculture, healthcare, and critical infrastructure.
 
-Previously holding 25% ownership in a restoration business generating $20M+ in revenue over two years, Kory walked away to build Delete Risk with complete independence—leveraging his decade of established relationships with senior adjusters, engineering firms, national carriers, and facility managers.
+Kory operates where failure is expensive and time is unforgiving. His expertise centers on business continuity, claims strategy, and large-scale execution—bridging the gap between insurance policy language, operational reality, and executive decision-making under pressure. He is frequently called in when losses exceed deductibles, schedules are at risk, or stakeholders are misaligned.
 
-His expertise spans rapid emergency response, vendor coordination, insurance documentation, and operational recovery for critical manufacturing environments. Kory has managed 20+ concurrent projects during catastrophic events, demonstrating the scalability and quality control that defines Delete Risk's operational model.`,
+His approach is disciplined and direct: identify risk early, control the critical path, mitigate business interruption, and make decisions that are fast, defensible, and informed. Kory is known for bringing order to chaos and clarity to moments that define organizations.
+
+Beyond active engagements, Kory is a trusted industry voice, speaker, and collaborator, challenging legacy approaches to disaster response and advocating for proactive, intelligence-driven risk frameworks. His work is grounded in one belief: preparation and leadership matter most on a company's worst day.`,
     credentials: [
-      "15+ years large-loss restoration experience",
-      "20+ established referral partner relationships",
-      "Proven track record delivering 4-5 major losses annually",
-      "National experience across multiple markets and industries",
-      "Deep expertise in manufacturing operations and insurance coordination",
+      "15+ years leading large-loss and disaster recovery",
+      "Hundreds of millions in commercial and industrial loss events",
+      "Expert in business continuity and claims strategy",
+      "Trusted industry voice and speaker",
+      "National experience across manufacturing, agriculture, healthcare, and critical infrastructure",
     ],
     hasPhoto: false,
   },
   {
-    name: "Heather",
-    title: "Title To Be Determined",
-    bio: "Bio content to be provided. Placeholder for Heather's background, expertise, role in Delete Risk, and relevant credentials.",
-    credentials: ["Credential 1", "Credential 2", "Credential 3"],
+    name: "Heather Van Riper",
+    title: "Founder | Risk, Compliance & Large-Loss Strategy",
+    bio: `Heather Van Riper is a senior risk, compliance, and operations leader with more than 20 years of experience guiding organizations through regulated, high-stakes environments where operational disruption, financial exposure, and governance risk converge. Her background spans enterprise compliance, public-sector finance, insurance, and large-loss response.
+
+Heather operates where accountability is non-negotiable and decisions must hold up under scrutiny. Her expertise centers on risk governance, regulatory alignment, and operational readiness—bridging the gap between compliance requirements, financial controls, and real-world execution under pressure. She is frequently relied upon when organizations face audit exposure, complex stakeholder coordination, or critical response decisions.
+
+Her approach is disciplined and methodical: identify risk gaps early, strengthen controls, align stakeholders, and ensure decisions are defensible, documented, and executable. Heather is known for translating complexity into clarity and bringing calm structure to moments that test leadership and systems alike.
+
+Beyond active engagements, Heather is a trusted strategic partner and advisor, valued for her ability to integrate compliance, finance, and operations into cohesive risk frameworks. Her work is grounded in one belief: organizations perform best in crisis when preparation, governance, and execution move together.`,
+    credentials: [
+      "20+ years in risk, compliance, and operations leadership",
+      "Expert in enterprise compliance and public-sector finance",
+      "Specialist in risk governance and regulatory alignment",
+      "Trusted strategic partner for complex stakeholder coordination",
+      "Deep expertise integrating compliance, finance, and operations",
+    ],
     hasPhoto: false,
   },
 ];
