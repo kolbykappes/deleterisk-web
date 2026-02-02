@@ -14,7 +14,7 @@ const steps = [
     title: "Crisis Response",
     items: [
       "Immediate mobilization when disaster strikes",
-      "Loss command authority established within 24 hours",
+      "Loss command authority established within hours",
       "Vendor coordination and resource deployment",
       "Real-time communication with all stakeholders",
     ],
@@ -60,7 +60,8 @@ export default function HowWeWork() {
           <p className="body-large text-frost-200">
             Delete Risk operates across the entire lifecycle of risk
             management—building relationships before disaster, taking command
-            during crisis, and ensuring rapid return to operations.
+            during crisis, ensuring rapid return to operations, and aligning
+            insurance stakeholders.
           </p>
         </div>
 

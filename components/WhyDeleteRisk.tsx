@@ -42,7 +42,7 @@ const differentiators = [
   {
     title: "Rapid Mobilization",
     description:
-      "Our lean, vendor-driven model enables 7-day mobilization without fixed overhead constraints. We scale quickly for multiple concurrent projects while maintaining quality through systemized documentation and proven PM/APM structure.",
+      "Our lean, vendor-driven model enables rapid mobilization without fixed overhead constraints. We scale quickly for multiple concurrent projects while maintaining quality through systemized documentation and proven PM/APM structure.",
     icon: (
       <svg
         className="w-8 h-8"
@@ -63,9 +63,7 @@ const differentiators = [
 
 const trustIndicators = [
   "15+ Years Managing Complex Manufacturing Losses",
-  "20+ Active Referral Partner Relationships",
-  "$1M-$5M+ Project Delivery Range",
-  "45% Gross Margins Through Operational Excellence",
+  "$25M+ Project Delivery Range",
   "Proven Track Record Across Multiple Industries",
 ];
 

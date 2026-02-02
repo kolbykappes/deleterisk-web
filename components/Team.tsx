@@ -19,9 +19,9 @@ Beyond active engagements, Kory is a trusted industry voice, speaker, and collab
     hasPhoto: false,
   },
   {
-    name: "Heather Van Riper",
+    name: "Heather N. Kappes",
     title: "Founder | Risk, Compliance & Large-Loss Strategy",
-    bio: `Heather Van Riper is a senior risk, compliance, and operations leader with more than 20 years of experience guiding organizations through regulated, high-stakes environments where operational disruption, financial exposure, and governance risk converge. Her background spans enterprise compliance, public-sector finance, insurance, and large-loss response.
+    bio: `Heather N. Kappes is a senior risk, compliance, and operations leader with more than 20 years of experience guiding organizations through regulated, high-stakes environments where operational disruption, financial exposure, and governance risk converge. Her background spans enterprise compliance, public-sector finance, insurance, and large-loss response.
 
 Heather operates where accountability is non-negotiable and decisions must hold up under scrutiny. Her expertise centers on risk governance, regulatory alignment, and operational readiness—bridging the gap between compliance requirements, financial controls, and real-world execution under pressure. She is frequently relied upon when organizations face audit exposure, complex stakeholder coordination, or critical response decisions.
 
