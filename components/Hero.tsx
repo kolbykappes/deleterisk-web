@@ -22,14 +22,14 @@ export default function Hero() {
             id="hero-heading"
             className="heading-1 text-white mb-6 text-balance"
           >
-            When Disaster Strikes, Every Minute Costs Millions
+            When Disaster Strikes, Every Minute Could Cost Millions
           </h1>
 
           {/* Subheadline */}
           <p className="body-large text-frost-200 mb-8 max-w-3xl">
-            Delete Risk delivers rapid large-loss restoration and independent
-            loss control for critical manufacturing operations. We stand between
-            catastrophic events and business failure.
+            Delete Risk delivers rapid independent loss control for critical
+            manufacturing operations. We stand between catastrophic events and
+            business failure.
           </p>
 
           {/* CTA Buttons */}
@@ -64,7 +64,7 @@ export default function Hero() {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
               <div className="text-frost-300 font-bold text-2xl md:text-3xl mb-1">
-                $20M+
+                $200M+
               </div>
               <div className="text-frost-200 text-sm">
                 in Successful Project Delivery

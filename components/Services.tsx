@@ -12,10 +12,10 @@ export default function Services() {
             Two Sides of Complete Protection
           </h2>
           <p className="body-large text-slate-600">
-            Delete Risk delivers both rapid restoration execution and
-            independent loss control advisory. Whether you need boots on the
-            ground or command authority in the room, we bring the expertise that
-            protects your operations.
+            Delete Risk delivers both rapid triage execution and independent
+            loss control advisory. Whether you need boots on the ground or
+            command authority in the room, we bring the expertise that protects
+            your operations.
           </p>
         </div>
 
@@ -40,16 +40,13 @@ export default function Services() {
               </svg>
             </div>
 
-            <h3 className="heading-3 text-brand-500 mb-4">
-              Rapid Response & Restoration
-            </h3>
+            <h3 className="heading-3 text-brand-500 mb-4">Rapid Response</h3>
 
             <p className="text-slate-600 mb-6 leading-relaxed">
               When catastrophic events strike—fires, floods, equipment failures,
               environmental releases—we mobilize within hours to contain damage,
               coordinate specialized vendors, and restore operations. Our lean,
-              vendor-driven model delivers superior margins and 7-day
-              mobilization capabilities.
+              vendor-driven model delivers instant mobilization capabilities.
             </p>
 
             {/* Capabilities */}
@@ -67,7 +64,7 @@ export default function Services() {
                   />
                 </svg>
                 <span className="text-slate-700">
-                  7-day mobilization for large-loss projects ($1M-$5M+)
+                  Instant mobilization for large-loss projects ($1M+)
                 </span>
               </li>
               <li className="flex items-start">
@@ -116,8 +113,8 @@ export default function Services() {
                   />
                 </svg>
                 <span className="text-slate-700">
-                  National coverage with proven execution across 20+ markets
-                  simultaneously
+                  National coverage with proven execution across multiple
+                  markets simultaneously
                 </span>
               </li>
             </ul>

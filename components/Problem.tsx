@@ -85,42 +85,13 @@ export default function Problem() {
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-brand-500 rounded-xl p-8 text-center">
             <p className="text-xl md:text-2xl text-white font-medium leading-relaxed">
-              &ldquo;When your facility is down, downtime costs millions per day.
-              You need someone who understands operations, controls the
-              response, and has one objective: get you back online fast.&rdquo;
+              &ldquo;When your facility is down, downtime costs millions. You
+              need someone who understands operations, controls the response,
+              and has one objective: get you back online fast.&rdquo;
             </p>
           </div>
         </div>
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 text-center">
-            <div className="text-shield-500 font-bold text-3xl md:text-4xl mb-2">
-              $M+
-            </div>
-            <div className="text-slate-600 font-medium">
-              Downtime Cost Per Day
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 text-center">
-            <div className="text-shield-500 font-bold text-3xl md:text-4xl mb-2">
-              Days
-            </div>
-            <div className="text-slate-600 font-medium">
-              Recovery Time Matters
-            </div>
-          </div>
-
-          <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 text-center">
-            <div className="text-shield-500 font-bold text-3xl md:text-4xl mb-2">
-              Every
-            </div>
-            <div className="text-slate-600 font-medium">
-              Delay Compounds Losses
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
