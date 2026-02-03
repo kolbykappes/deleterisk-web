@@ -114,7 +114,7 @@ export default function WhoWeServe() {
           </h2>
           <p className="body-large text-slate-600">
             We partner with large, complex manufacturing operations where every
-            day of downtime costs millions—and where rapid recovery is the
+            day of downtime costs millions, and where rapid recovery is the
             difference between survival and failure.
           </p>
         </div>
@@ -156,7 +156,7 @@ export default function WhoWeServe() {
             <p className="text-lg md:text-xl text-white leading-relaxed">
               If your facility experiences downtime costs of millions, customers
               who cannot wait for delivery, and employees whose livelihoods
-              depend on rapid recovery—Delete Risk is built for you.
+              depend on rapid recovery, Delete Risk is built for you.
             </p>
             <a href="#contact" className="btn-primary mt-6 inline-block !bg-shield-500 hover:!bg-shield-600">
               Protect Your Operations

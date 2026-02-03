@@ -59,7 +59,7 @@ export default function HowWeWork() {
           </h2>
           <p className="body-large text-frost-200">
             Delete Risk operates across the entire lifecycle of risk
-            management—building relationships before disaster, taking command
+            management: building relationships before disaster, taking command
             during crisis, ensuring rapid return to operations, and aligning
             insurance stakeholders.
           </p>
@@ -116,7 +116,7 @@ export default function HowWeWork() {
           <div className="bg-brand-600 rounded-xl p-8 border border-brand-400">
             <p className="text-lg text-frost-100 leading-relaxed text-center">
               &ldquo;Our Risk Management App keeps us connected between
-              incidents—maintaining mind share through quarterly check-ins,
+              incidents, maintaining mind share through quarterly check-ins,
               facility documentation, 3D scanning, and proactive alerts. When
               disaster strikes, you don&apos;t have to think about who to call.
               We&apos;re already your first call.&rdquo;
