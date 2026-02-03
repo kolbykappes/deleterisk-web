@@ -9,7 +9,7 @@ export default function Problem() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 id="problem-heading" className="heading-2 text-brand-500 mb-6">
-            The Real Risk Isn&apos;t the Damage—It&apos;s What Happens Next
+            The Real Risk Isn&apos;t the Damage. It&apos;s What Happens Next
           </h2>
         </div>
 
@@ -55,7 +55,7 @@ export default function Problem() {
                 />
               </svg>
               <span className="text-lg text-slate-700">
-                Contractors optimize for revenue, not recovery—over-scoping is
+                Contractors optimize for revenue, not recovery. Over-scoping is
                 systematic, not accidental
               </span>
             </li>

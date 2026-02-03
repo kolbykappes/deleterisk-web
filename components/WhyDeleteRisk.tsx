@@ -2,7 +2,7 @@ const differentiators = [
   {
     title: "Independence That Matters",
     description:
-      "We have no financial incentive tied to restoration volume or remediation scope. Our advisory services are compensated for speed, control, and results—not for dragging out timelines or inflating costs. When execution is needed, it's delivered through transparent, proven capabilities.",
+      "We have no financial incentive tied to restoration volume or remediation scope. Our advisory services are compensated for speed, control, and results, not for dragging out timelines or inflating costs. When execution is needed, it's delivered through transparent, proven capabilities.",
     icon: (
       <svg
         className="w-8 h-8"
@@ -63,7 +63,6 @@ const differentiators = [
 
 const trustIndicators = [
   "15+ Years Managing Complex Manufacturing Losses",
-  "$25M+ Project Delivery Range",
   "Proven Track Record Across Multiple Industries",
 ];
 
