@@ -54,8 +54,8 @@ export default function Team() {
           </h2>
           <p className="body-large text-slate-600">
             Delete Risk is led by proven operators with deep expertise in
-            large-loss restoration, manufacturing operations, and insurance
-            stakeholder management.
+            large-loss management, manufacturing operations, and insurance
+            stakeholder coordination.
           </p>
         </div>
 

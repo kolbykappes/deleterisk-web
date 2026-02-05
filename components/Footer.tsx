@@ -23,7 +23,7 @@ export default function Footer() {
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-sm text-slate-400">
-              Business Continuity & Rapid Restoration for Critical Manufacturing
+              Business Continuity & Loss Control for Critical Manufacturing
             </p>
           </div>
 
