@@ -57,10 +57,6 @@ export default function InfoForm() {
       newErrors.company = "Company is required";
     }
 
-    if (!formData.position.trim()) {
-      newErrors.position = "Position is required";
-    }
-
     if (file && file.size > MAX_FILE_SIZE_BYTES) {
       newErrors.file = `File must be under ${MAX_FILE_SIZE_MB}MB`;
     }
@@ -277,7 +273,7 @@ export default function InfoForm() {
               htmlFor="position"
               className="block text-sm font-medium text-slate-700 mb-2"
             >
-              Position <span className="text-red-600">*</span>
+              Position
             </label>
             <input
               type="text"

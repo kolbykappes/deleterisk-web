@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     const position = form.get("position") as string | null;
     const businessCard = form.get("businessCard") as File | null;
 
-    if (!name?.trim() || !email?.trim() || !company?.trim() || !position?.trim()) {
+    if (!name?.trim() || !email?.trim() || !company?.trim()) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
         email: email.trim(),
         phone: phone?.trim() || null,
         company: company.trim(),
-        position: position.trim(),
+        position: position?.trim() || null,
         businessCardS3Key,
         businessCardFilename,
       },

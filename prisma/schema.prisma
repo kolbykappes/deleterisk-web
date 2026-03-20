@@ -13,7 +13,7 @@ model InfoSubmission {
   email                String
   phone                String?
   company              String
-  position             String
+  position             String?
   businessCardS3Key    String?  @map("business_card_s3_key")
   businessCardFilename String?  @map("business_card_filename")
   createdAt            DateTime @default(now()) @map("created_at")
