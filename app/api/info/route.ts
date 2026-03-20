@@ -110,10 +110,11 @@ export async function POST(request: NextRequest) {
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Company</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${company.trim()}</td>
             </tr>
+            ${position?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Position</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${position.trim()}</td>
-            </tr>
+            </tr>` : ""}
             ${businessCardFilename && !isImage ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Business Card</td>
