@@ -35,18 +35,22 @@ export async function POST(request: NextRequest) {
 
     let businessCardS3Key: string | null = null;
     let businessCardFilename: string | null = null;
+    let businessCardBuffer: Buffer | null = null;
+    let businessCardContentType: string | null = null;
 
     if (businessCard && businessCard.size > 0) {
+      businessCardBuffer = Buffer.from(await businessCard.arrayBuffer());
+      businessCardFilename = businessCard.name;
+      businessCardContentType = businessCard.type || "application/octet-stream";
+
       if (!s3Configured()) {
         console.warn("S3 not configured — skipping business card upload");
       } else {
-        const buffer = Buffer.from(await businessCard.arrayBuffer());
         const key = `info-submissions/${randomUUID()}/${businessCard.name}`;
-        const result = await uploadFile(buffer, key, businessCard.type || "application/octet-stream");
+        const result = await uploadFile(businessCardBuffer, key, businessCardContentType);
 
         if (result.success) {
           businessCardS3Key = result.key;
-          businessCardFilename = businessCard.name;
         } else {
           console.error("Business card upload failed:", result.error);
         }
@@ -66,11 +70,24 @@ export async function POST(request: NextRequest) {
     });
 
     if (resend) {
+      const isImage = businessCardContentType?.startsWith("image/");
+      const inlineImageHtml =
+        isImage && businessCardBuffer
+          ? `<h3 style="margin-top: 20px;">Business Card</h3>
+             <img src="data:${businessCardContentType};base64,${businessCardBuffer.toString("base64")}" alt="Business Card" style="max-width: 100%; max-height: 400px; border: 1px solid #ddd; border-radius: 5px;" />`
+          : "";
+
+      const attachments =
+        businessCardBuffer && businessCardFilename
+          ? [{ filename: businessCardFilename, content: businessCardBuffer }]
+          : [];
+
       const { error: emailError } = await resend.emails.send({
         from: "Delete Risk <noreply@deleterisk.com>",
         to: ["drew@mtm.earth", "jetplaneai@gmail.com"],
         replyTo: email.trim(),
         subject: `New Info Submission from ${name.trim()}`,
+        attachments,
         html: `
           <h2>New Info Collection Submission</h2>
           <p>A new interested party has submitted their information via the Delete Risk info page.</p>
@@ -97,12 +114,14 @@ export async function POST(request: NextRequest) {
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Position</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${position.trim()}</td>
             </tr>
-            ${businessCardFilename ? `
+            ${businessCardFilename && !isImage ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Business Card</td>
-              <td style="padding: 8px; border: 1px solid #ddd;">${businessCardFilename} (uploaded to S3)</td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${businessCardFilename} (see attachment)</td>
             </tr>` : ""}
           </table>
+
+          ${inlineImageHtml}
 
           <hr style="margin-top: 30px; border: none; border-top: 1px solid #ddd;" />
           <p style="color: #666; font-size: 12px;">
