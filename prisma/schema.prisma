@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model InfoSubmission {
+  id                   String   @id @default(uuid()) @db.Uuid
+  name                 String
+  email                String
+  phone                String?
+  company              String
+  position             String
+  businessCardS3Key    String?  @map("business_card_s3_key")
+  businessCardFilename String?  @map("business_card_filename")
+  createdAt            DateTime @default(now()) @map("created_at")
+
+  @@map("info_submissions")
+}
