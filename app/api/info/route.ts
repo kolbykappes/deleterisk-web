@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
     if (resend) {
       const { error: emailError } = await resend.emails.send({
         from: "Delete Risk <noreply@deleterisk.com>",
-        to: ["drew@mtm.earth"],
+        to: ["drew@mtm.earth", "jetplaneai@gmail.com"],
         replyTo: email.trim(),
         subject: `New Info Submission from ${name.trim()}`,
         html: `
