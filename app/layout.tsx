@@ -3,12 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
-  description: "Delete Risk delivers rapid response and independent loss control for critical manufacturing operations. 15+ years managing large-scale losses. Protect your operations.",
+  description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most. 15+ years managing large-scale losses.",
   keywords: ["large loss management", "manufacturing recovery", "business continuity", "loss control", "disaster recovery", "plant recovery"],
   authors: [{ name: "Delete Risk" }],
   openGraph: {
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
-    description: "Delete Risk delivers rapid response and independent loss control for critical manufacturing operations. 15+ years managing large-scale losses.",
+    description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
     url: "https://deleterisk.com",
     siteName: "Delete Risk",
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
-    description: "Delete Risk delivers rapid response and independent loss control for critical manufacturing operations.",
+    description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
   },
   robots: {
     index: true,

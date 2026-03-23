@@ -27,9 +27,10 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="body-large text-frost-200 mb-8 max-w-3xl">
-            Delete Risk delivers rapid independent loss control for critical
-            manufacturing operations. We stand between catastrophic events and
-            business failure.
+            Delete Risk delivers rapid, independent loss control for critical
+            manufacturing operations. We step in between catastrophic events and
+            business failure—bringing structure, visibility, and control when it
+            matters most.
           </p>
 
           {/* CTA Buttons */}

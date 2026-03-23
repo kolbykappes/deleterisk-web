@@ -159,9 +159,13 @@ export default function ContactForm() {
             </h2>
             <p className="body-large text-frost-200">
               Whether you&apos;re preparing for potential risks or responding to
-              an active crisis, Delete Risk brings the expertise and rapid
-              response your facility needs. Get in touch to discuss how we can
-              protect your operations.
+              an active crisis, Delete Risk brings the experience, structure,
+              and rapid coordination your facility needs.
+            </p>
+            <p className="body-large text-frost-200 mt-4">
+              Start the conversation today—we&apos;ll help you understand your
+              risks, your options, and how to stay in control when it matters
+              most.
             </p>
           </div>
 

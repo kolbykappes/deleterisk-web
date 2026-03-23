@@ -2,7 +2,7 @@ const differentiators = [
   {
     title: "Independence That Matters",
     description:
-      "We have no financial incentive tied to restoration volume or remediation scope. Our advisory services are compensated for speed, control, and results, not for dragging out timelines or inflating costs. When execution is needed, it's delivered through transparent, proven capabilities.",
+      "We have no financial incentive tied to restoration volume or remediation scope. Our advisory services are compensated for speed, control, and results—not for dragging out timelines or inflating costs. When execution is required, it is delivered through transparent, proven partners.",
     icon: (
       <svg
         className="w-8 h-8"
@@ -22,7 +22,7 @@ const differentiators = [
   {
     title: "Manufacturing Expertise",
     description:
-      "We understand how plants actually operate. Our team has managed large-scale manufacturing losses across food processing, packaging, industrial operations, and critical infrastructure. We speak your language and know your operational realities.",
+      "We understand how plants actually operate. Our team has managed large-scale manufacturing losses across food processing, packaging, industrial operations, and critical infrastructure. We speak your language and understand your operational realities.",
     icon: (
       <svg
         className="w-8 h-8"
@@ -42,7 +42,7 @@ const differentiators = [
   {
     title: "Rapid Mobilization",
     description:
-      "Our lean, vendor-driven model enables rapid mobilization without fixed overhead constraints. We scale quickly for multiple concurrent projects while maintaining quality through systemized documentation and proven PM/APM structure.",
+      "Our lean, vendor-driven model enables rapid mobilization without fixed overhead constraints. We scale quickly across multiple concurrent projects while maintaining quality through structured documentation and proven project leadership.",
     icon: (
       <svg
         className="w-8 h-8"
@@ -83,8 +83,8 @@ export default function WhyDeleteRisk() {
             Proven Expertise. Proven Relationships. Proven Results.
           </h2>
           <p className="body-large text-slate-600">
-            Delete Risk brings operational execution and independent advisory
-            expertise that traditional contractors and consultants cannot match.
+            Delete Risk brings operational expertise and independent advisory
+            leadership that traditional contractors and consultants cannot match.
           </p>
         </div>
 

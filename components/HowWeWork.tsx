@@ -5,8 +5,8 @@ const steps = [
     items: [
       "Facility assessments and operational vulnerability analysis",
       "Custom business continuity playbooks",
-      "Risk Management App deployment for ongoing engagement",
-      "Quarterly vendor verifications and proactive risk alerts",
+      "Ongoing engagement through real-time tracking and risk visibility",
+      "Quarterly vendor verification and proactive risk alerts",
     ],
   },
   {
@@ -15,15 +15,15 @@ const steps = [
     items: [
       "Immediate mobilization when disaster strikes",
       "Loss command authority established within hours",
-      "Vendor coordination and resource deployment",
-      "Real-time communication with all stakeholders",
+      "Vendor coordination and resource alignment",
+      "Real-time communication across all stakeholders",
     ],
   },
   {
     number: "03",
     title: "Rapid Recovery",
     items: [
-      "Critical path execution to restore production",
+      "Critical path oversight to bring production back online",
       "Scope control and cost management",
       "Insurance coordination and documentation",
       "Timeline acceleration to minimize business interruption",
@@ -33,10 +33,10 @@ const steps = [
     number: "04",
     title: "Return to Operations",
     items: [
-      "Production capacity restored",
+      "Production capacity restored and stabilized",
       "Employees back to work",
       "Customer commitments maintained",
-      "Post-incident analysis and plan refinement",
+      "Post-incident analysis and continuity plan refinement",
     ],
   },
 ];
@@ -60,7 +60,7 @@ export default function HowWeWork() {
           <p className="body-large text-frost-200">
             Delete Risk operates across the entire lifecycle of risk
             management: building relationships before disaster, taking command
-            during crisis, ensuring rapid return to operations, and aligning
+            during crisis, driving rapid return to operations, and aligning
             insurance stakeholders.
           </p>
         </div>
@@ -115,11 +115,10 @@ export default function HowWeWork() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-brand-600 rounded-xl p-8 border border-brand-400">
             <p className="text-lg text-frost-100 leading-relaxed text-center">
-              &ldquo;Our Risk Management App keeps us connected between
-              incidents, maintaining mind share through quarterly check-ins,
-              facility documentation, 3D scanning, and proactive alerts. When
-              disaster strikes, you don&apos;t have to think about who to call.
-              We&apos;re already your first call.&rdquo;
+              &ldquo;We stay connected between incidents—maintaining visibility
+              through regular check-ins, facility knowledge, and proactive risk
+              monitoring. When disaster strikes, you don&apos;t have to think
+              about who to call. We&apos;re already your first call.&rdquo;
             </p>
           </div>
         </div>

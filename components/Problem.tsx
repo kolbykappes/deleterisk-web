@@ -17,7 +17,7 @@ export default function Problem() {
         <div className="max-w-4xl mx-auto mb-12">
           <p className="body-large text-slate-600 mb-8">
             Large manufacturing losses don&apos;t fail because of fire, flood, or
-            equipment damage. They fail because:
+            equipment damage. They fail because control is lost:
           </p>
 
           <ul className="space-y-4 mb-8">
@@ -55,7 +55,7 @@ export default function Problem() {
                 />
               </svg>
               <span className="text-lg text-slate-700">
-                Contractors optimize for revenue, not recovery. Over-scoping is
+                Contractors optimize for revenue—not recovery. Over-scoping is
                 systematic, not accidental
               </span>
             </li>
@@ -75,7 +75,7 @@ export default function Problem() {
               </svg>
               <span className="text-lg text-slate-700">
                 Days turn into weeks. Customers leave. Employees face layoffs.
-                Supply chains collapse.
+                Supply chains break down
               </span>
             </li>
           </ul>
@@ -86,8 +86,8 @@ export default function Problem() {
           <div className="bg-brand-500 rounded-xl p-8 text-center">
             <p className="text-xl md:text-2xl text-white font-medium leading-relaxed">
               &ldquo;When your facility is down, downtime costs millions. You
-              need someone who understands operations, controls the response,
-              and has one objective: get you back online fast.&rdquo;
+              need someone who understands operations, takes control of the
+              response, and has one objective: get you back online fast.&rdquo;
             </p>
           </div>
         </div>

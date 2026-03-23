@@ -12,10 +12,10 @@ export default function Services() {
             Two Sides of Complete Protection
           </h2>
           <p className="body-large text-slate-600">
-            Delete Risk delivers both rapid triage execution and independent
-            loss control advisory. Whether you need boots on the ground or
-            command authority in the room, we bring the expertise that protects
-            your operations.
+            Delete Risk delivers both rapid triage support and independent
+            loss control advisory. Whether you need experienced leadership
+            on-site or command authority in the room, we bring the expertise
+            that protects your operations.
           </p>
         </div>
 
@@ -46,8 +46,8 @@ export default function Services() {
 
             <p className="text-slate-600 mb-6 leading-relaxed">
               Before disaster strikes, we build customized business continuity
-              playbooks. During crisis, we provide independent loss command
-              authority, controlling scope, managing contractors, and driving
+              playbooks. During a crisis, we provide independent loss command
+              authority—controlling scope, managing contractors, and aligning
               every stakeholder toward one goal: operational resumption. No
               financial incentive tied to restoration volume. Only results.
             </p>
@@ -100,8 +100,8 @@ export default function Services() {
                   />
                 </svg>
                 <span className="text-slate-700">
-                  Scope control and cost protection (prevent contractor
-                  over-scoping)
+                  Scope control and cost protection—preventing contractor
+                  over-scoping
                 </span>
               </li>
               <li className="flex items-start">
@@ -117,8 +117,8 @@ export default function Services() {
                   />
                 </svg>
                 <span className="text-slate-700">
-                  Timeline acceleration: every day saved retains customers and
-                  protects jobs
+                  Timeline acceleration: every day saved protects revenue,
+                  customers, and jobs
                 </span>
               </li>
             </ul>
@@ -167,9 +167,10 @@ export default function Services() {
 
             <p className="text-slate-600 mb-6 leading-relaxed">
               When catastrophic events strike (fires, floods, equipment failures,
-              environmental releases), we mobilize within hours to contain damage,
-              coordinate specialized vendors, and restore operations. Our lean,
-              vendor-driven model delivers instant mobilization capabilities.
+              environmental releases), we mobilize within hours to coordinate
+              containment efforts, coordinate specialized vendors, and drive the
+              operation toward recovery. Our lean, vendor-driven model enables
+              rapid mobilization without adding unnecessary layers or delays.
             </p>
 
             {/* Capabilities */}
@@ -187,7 +188,7 @@ export default function Services() {
                   />
                 </svg>
                 <span className="text-slate-700">
-                  Instant mobilization for large-loss projects ($1M+)
+                  Rapid mobilization for large-loss projects ($1M+)
                 </span>
               </li>
               <li className="flex items-start">
