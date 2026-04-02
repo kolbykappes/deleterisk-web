@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most. 15+ years managing large-scale losses.",
   keywords: ["large loss management", "manufacturing recovery", "business continuity", "loss control", "disaster recovery", "plant recovery"],
   authors: [{ name: "Delete Risk" }],
+  // Embed thumbnails: use app/opengraph-image.png + app/twitter-image.png (generated before build).
+  // Next injects og:image / twitter:image from those files — not from <Image /> on the page.
   openGraph: {
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
     description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
@@ -16,20 +18,11 @@ export const metadata: Metadata = {
     siteName: "Delete Risk",
     type: "website",
     locale: "en_US",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Delete Risk — Independent Loss Control for Critical Manufacturing",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
     description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
-    images: [`${siteUrl}/og-image.png`],
   },
   robots: {
     index: true,

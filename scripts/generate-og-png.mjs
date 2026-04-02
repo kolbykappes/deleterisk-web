@@ -1,5 +1,9 @@
 /**
- * Writes public/og-image.png (1200×630) for Open Graph / Twitter embeds.
+ * Writes Next.js metadata file conventions (see nextjs.org metadata opengraph-image):
+ *   - app/opengraph-image.png  → og:image (+ merged social metadata)
+ *   - app/twitter-image.png    → twitter:image (large card thumbnail)
+ *
+ * This is how App Router wires embed images — not the <Image /> component on the page.
  * Prefers compositing a real logo; falls back to an SVG rasterized by sharp.
  */
 import { existsSync } from "node:fs";
@@ -12,7 +16,7 @@ const H = 630;
 const BG = "#0f172a";
 
 const publicDir = join(process.cwd(), "public");
-const outPath = join(publicDir, "og-image.png");
+const appDir = join(process.cwd(), "app");
 
 async function tryFromLogo() {
   for (const name of ["og-logo.png", "logo.png", "logo.webp"]) {
@@ -57,5 +61,9 @@ async function fromSvgFallback() {
 }
 
 const buf = (await tryFromLogo()) ?? (await fromSvgFallback());
-await writeFile(outPath, buf);
-console.log("Wrote", outPath);
+
+const openGraphPath = join(appDir, "opengraph-image.png");
+const twitterPath = join(appDir, "twitter-image.png");
+await writeFile(openGraphPath, buf);
+await writeFile(twitterPath, buf);
+console.log("Wrote", openGraphPath, "and", twitterPath);

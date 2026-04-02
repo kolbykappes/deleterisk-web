@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/generate-og-png.mjs && next dev",
     "build": "node scripts/generate-og-png.mjs && prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
