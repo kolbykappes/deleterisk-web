@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Delete Risk — Independent Loss Control for Critical Manufacturing",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
     description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
-    images: [`${siteUrl}/og-image.png`],
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
