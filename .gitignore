@@ -13,10 +13,6 @@
 /.next/
 /out/
 
-# Generated social preview assets (see scripts/generate-og-png.mjs)
-/app/opengraph-image.png
-/app/twitter-image.png
-
 # production
 /build
 
