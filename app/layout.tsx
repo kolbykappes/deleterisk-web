@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://deleterisk.com"),
   title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
   description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most. 15+ years managing large-scale losses.",
   keywords: ["large loss management", "manufacturing recovery", "business continuity", "loss control", "disaster recovery", "plant recovery"],
@@ -13,11 +14,13 @@ export const metadata: Metadata = {
     siteName: "Delete Risk",
     type: "website",
     locale: "en_US",
+    images: [{ url: "/logo.webp", alt: "Delete Risk" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Delete Risk - Independent Loss Control for Critical Manufacturing",
     description: "Delete Risk delivers rapid, independent loss control for critical manufacturing operations—bringing structure, visibility, and control when it matters most.",
+    images: ["/logo.webp"],
   },
   robots: {
     index: true,
