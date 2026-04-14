@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { prisma } from "@/lib/prisma";
+import { pool } from "@/lib/db";
 import { uploadFile, isConfigured as s3Configured } from "@/lib/s3";
 import { randomUUID } from "node:crypto";
 
@@ -57,17 +57,22 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    const record = await prisma.infoSubmission.create({
-      data: {
-        name: name.trim(),
-        email: email.trim(),
-        phone: phone?.trim() || null,
-        company: company.trim(),
-        position: position?.trim() || null,
+    const id = randomUUID();
+    await pool.query(
+      `INSERT INTO info_submissions (id, name, email, phone, company, position, business_card_s3_key, business_card_filename)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+      [
+        id,
+        name.trim(),
+        email.trim(),
+        phone?.trim() || null,
+        company.trim(),
+        position?.trim() || null,
         businessCardS3Key,
         businessCardFilename,
-      },
-    });
+      ]
+    );
+    const record = { id };
 
     if (resend) {
       const isImage = businessCardContentType?.startsWith("image/");
