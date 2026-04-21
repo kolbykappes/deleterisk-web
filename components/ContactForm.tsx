@@ -8,6 +8,7 @@ interface FormData {
   company: string;
   phone: string;
   message: string;
+  golfSimulator: boolean;
 }
 
 interface FormErrors {
@@ -24,6 +25,7 @@ export default function ContactForm() {
     company: "",
     phone: "",
     message: "",
+    golfSimulator: false,
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
@@ -84,6 +86,7 @@ export default function ContactForm() {
         company: "",
         phone: "",
         message: "",
+        golfSimulator: false,
       });
     } catch {
       alert("Failed to send message. Please try again or email us directly at info@deleterisk.com");
@@ -294,6 +297,30 @@ export default function ContactForm() {
                     {errors.phone}
                   </p>
                 )}
+              </div>
+
+              {/* Golf simulator participant */}
+              <div className="md:col-span-2">
+                <label
+                  htmlFor="contactGolfSimulator"
+                  className="flex items-center gap-3 cursor-pointer"
+                >
+                  <input
+                    type="checkbox"
+                    id="contactGolfSimulator"
+                    checked={formData.golfSimulator}
+                    onChange={(e) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        golfSimulator: e.target.checked,
+                      }))
+                    }
+                    className="w-4 h-4 accent-brand-500"
+                  />
+                  <span className="text-sm font-medium text-slate-700">
+                    Golf simulator participant
+                  </span>
+                </label>
               </div>
 
               {/* Message */}

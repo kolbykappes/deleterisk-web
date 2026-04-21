@@ -11,6 +11,7 @@ interface ContactFormData {
   company: string;
   phone: string;
   message: string;
+  golfSimulator?: boolean;
 }
 
 export async function POST(request: NextRequest) {
@@ -23,7 +24,8 @@ export async function POST(request: NextRequest) {
 
   try {
     const body: ContactFormData = await request.json();
-    const { fullName, email, company, phone, message } = body;
+    const { fullName, email, company, phone, message, golfSimulator } = body;
+    const golfSimulatorYes = !!golfSimulator;
 
     // Validate required fields
     if (!fullName || !email || !company || !phone) {
@@ -59,6 +61,10 @@ export async function POST(request: NextRequest) {
           <tr>
             <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Phone</td>
             <td style="padding: 8px; border: 1px solid #ddd;"><a href="tel:${phone}">${phone}</a></td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Golf simulator participant</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">${golfSimulatorYes ? "Yes" : "No"}</td>
           </tr>
         </table>
 
