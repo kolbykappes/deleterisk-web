@@ -8,6 +8,7 @@ interface FormData {
   phone: string;
   company: string;
   position: string;
+  golfSimulator: boolean;
 }
 
 interface FormErrors {
@@ -29,6 +30,7 @@ export default function InfoForm() {
     phone: "",
     company: "",
     position: "",
+    golfSimulator: false,
   });
   const [file, setFile] = useState<File | null>(null);
   const [errors, setErrors] = useState<FormErrors>({});
@@ -78,6 +80,7 @@ export default function InfoForm() {
       body.append("phone", formData.phone);
       body.append("company", formData.company);
       body.append("position", formData.position);
+      body.append("golfSimulator", String(formData.golfSimulator));
       if (file) body.append("businessCard", file);
 
       const response = await fetch("/api/info", {
@@ -291,6 +294,30 @@ export default function InfoForm() {
                 {errors.position}
               </p>
             )}
+          </div>
+
+          {/* Golf simulator participant */}
+          <div className="md:col-span-2">
+            <label
+              htmlFor="golfSimulator"
+              className="flex items-center gap-3 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                id="golfSimulator"
+                checked={formData.golfSimulator}
+                onChange={(e) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    golfSimulator: e.target.checked,
+                  }))
+                }
+                className="w-4 h-4 accent-brand-500"
+              />
+              <span className="text-sm font-medium text-slate-700">
+                Golf simulator participant
+              </span>
+            </label>
           </div>
 
           {/* Business Card Upload */}

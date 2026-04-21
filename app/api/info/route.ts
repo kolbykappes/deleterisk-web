@@ -17,6 +17,7 @@ export async function POST(request: NextRequest) {
     const phone = (form.get("phone") as string | null) || null;
     const company = form.get("company") as string | null;
     const position = form.get("position") as string | null;
+    const golfSimulator = form.get("golfSimulator") === "true";
     const businessCard = form.get("businessCard") as File | null;
 
     if (!name?.trim() || !email?.trim() || !company?.trim()) {
@@ -59,8 +60,8 @@ export async function POST(request: NextRequest) {
 
     const id = randomUUID();
     await pool.query(
-      `INSERT INTO info_submissions (id, name, email, phone, company, position, business_card_s3_key, business_card_filename)
-       VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+      `INSERT INTO info_submissions (id, name, email, phone, company, position, golf_simulator, business_card_s3_key, business_card_filename)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
       [
         id,
         name.trim(),
@@ -68,6 +69,7 @@ export async function POST(request: NextRequest) {
         phone?.trim() || null,
         company.trim(),
         position?.trim() || null,
+        golfSimulator,
         businessCardS3Key,
         businessCardFilename,
       ]
@@ -120,6 +122,10 @@ export async function POST(request: NextRequest) {
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Position</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${position.trim()}</td>
             </tr>` : ""}
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Golf simulator participant</td>
+              <td style="padding: 8px; border: 1px solid #ddd;">${golfSimulator ? "Yes" : "No"}</td>
+            </tr>
             ${businessCardFilename && !isImage ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Business Card</td>

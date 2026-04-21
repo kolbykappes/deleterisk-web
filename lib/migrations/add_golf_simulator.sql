@@ -1,0 +1,2 @@
+ALTER TABLE info_submissions
+  ADD COLUMN IF NOT EXISTS golf_simulator BOOLEAN NOT NULL DEFAULT FALSE;
