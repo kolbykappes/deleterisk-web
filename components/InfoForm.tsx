@@ -18,6 +18,7 @@ interface FormErrors {
   company?: string;
   position?: string;
   file?: string;
+  atLeastOne?: string;
 }
 
 const MAX_FILE_SIZE_MB = 10;
@@ -41,13 +42,7 @@ export default function InfoForm() {
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    if (formData.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
 
@@ -55,12 +50,21 @@ export default function InfoForm() {
       newErrors.phone = "Please enter a valid phone number";
     }
 
-    if (!formData.company.trim()) {
-      newErrors.company = "Company is required";
-    }
-
     if (file && file.size > MAX_FILE_SIZE_BYTES) {
       newErrors.file = `File must be under ${MAX_FILE_SIZE_MB}MB`;
+    }
+
+    const hasAnyData =
+      formData.name.trim() ||
+      formData.email.trim() ||
+      formData.phone.trim() ||
+      formData.company.trim() ||
+      formData.position.trim() ||
+      formData.golfSimulator ||
+      file;
+
+    if (!hasAnyData) {
+      newErrors.atLeastOne = "Please provide at least one piece of information or attach a business card";
     }
 
     setErrors(newErrors);
@@ -172,7 +176,7 @@ export default function InfoForm() {
               htmlFor="name"
               className="block text-sm font-medium text-slate-700 mb-2"
             >
-              Name <span className="text-red-600">*</span>
+              Name
             </label>
             <input
               type="text"
@@ -198,7 +202,7 @@ export default function InfoForm() {
               htmlFor="email"
               className="block text-sm font-medium text-slate-700 mb-2"
             >
-              Email <span className="text-red-600">*</span>
+              Email
             </label>
             <input
               type="email"
@@ -250,7 +254,7 @@ export default function InfoForm() {
               htmlFor="company"
               className="block text-sm font-medium text-slate-700 mb-2"
             >
-              Company <span className="text-red-600">*</span>
+              Company
             </label>
             <input
               type="text"
@@ -404,8 +408,13 @@ export default function InfoForm() {
           </div>
         </div>
 
+        {/* At-least-one error */}
+        {errors.atLeastOne && (
+          <p className="mt-6 text-sm text-red-600 text-center">{errors.atLeastOne}</p>
+        )}
+
         {/* Submit */}
-        <div className="mt-8">
+        <div className="mt-4">
           <button
             type="submit"
             disabled={isSubmitting}

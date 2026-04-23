@@ -20,14 +20,23 @@ export async function POST(request: NextRequest) {
     const golfSimulator = form.get("golfSimulator") === "true";
     const businessCard = form.get("businessCard") as File | null;
 
-    if (!name?.trim() || !email?.trim() || !company?.trim()) {
+    const hasAnyData =
+      name?.trim() ||
+      email?.trim() ||
+      phone?.trim() ||
+      company?.trim() ||
+      position?.trim() ||
+      golfSimulator ||
+      (businessCard && businessCard.size > 0);
+
+    if (!hasAnyData) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        { error: "At least one piece of information is required" },
         { status: 400 }
       );
     }
 
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (email?.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json(
         { error: "Invalid email address" },
         { status: 400 }
@@ -64,10 +73,10 @@ export async function POST(request: NextRequest) {
        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)`,
       [
         id,
-        name.trim(),
-        email.trim(),
+        name?.trim() || null,
+        email?.trim() || null,
         phone?.trim() || null,
-        company.trim(),
+        company?.trim() || null,
         position?.trim() || null,
         golfSimulator,
         businessCardS3Key,
@@ -89,34 +98,40 @@ export async function POST(request: NextRequest) {
           ? [{ filename: businessCardFilename, content: businessCardBuffer }]
           : [];
 
+      const senderLabel = name?.trim() || email?.trim() || "Anonymous";
+      const replyToAddress = email?.trim() || undefined;
+
       const { error: emailError } = await resend.emails.send({
         from: "Delete Risk <noreply@deleterisk.com>",
         to: ["info@deleterisk.com", "jetplaneai@gmail.com"],
-        replyTo: email.trim(),
-        subject: `New Info Submission from ${name.trim()}`,
+        ...(replyToAddress ? { replyTo: replyToAddress } : {}),
+        subject: `New Info Submission from ${senderLabel}`,
         attachments,
         html: `
           <h2>New Info Collection Submission</h2>
           <p>A new interested party has submitted their information via the Delete Risk info page.</p>
 
           <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
+            ${name?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold; width: 150px;">Name</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${name.trim()}</td>
-            </tr>
+            </tr>` : ""}
+            ${email?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Email</td>
               <td style="padding: 8px; border: 1px solid #ddd;"><a href="mailto:${email.trim()}">${email.trim()}</a></td>
-            </tr>
+            </tr>` : ""}
             ${phone?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Phone</td>
               <td style="padding: 8px; border: 1px solid #ddd;"><a href="tel:${phone.trim()}">${phone.trim()}</a></td>
             </tr>` : ""}
+            ${company?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Company</td>
               <td style="padding: 8px; border: 1px solid #ddd;">${company.trim()}</td>
-            </tr>
+            </tr>` : ""}
             ${position?.trim() ? `
             <tr>
               <td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">Position</td>
