@@ -15,7 +15,7 @@ export interface AdminSession {
 }
 
 export async function signSession(payload: AdminSession): Promise<string> {
-  return new SignJWT(payload as Record<string, unknown>)
+  return new SignJWT(payload as unknown as Record<string, unknown>)
     .setProtectedHeader({ alg: "HS256" })
     .setIssuedAt()
     .setExpirationTime("8h")
